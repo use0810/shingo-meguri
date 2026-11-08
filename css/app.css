@@ -1346,21 +1346,6 @@ h1, h2, h3 { font-weight: 900; }
   letter-spacing: 0.08em;
 }
 
-/* スキップしたら最終状態をそのまま見せる */
-.gacha.is-skipped .stampbook,
-.gacha.is-skipped .imprint,
-.gacha.is-skipped .drop,
-.gacha.is-skipped .drop-name,
-.gacha.is-skipped .gacha-result { animation: none; opacity: 1; transform: none; filter: none; }
-
-.gacha.is-skipped .pon { animation: none; opacity: 1; transform: rotate(10deg); }
-
-.gacha.is-skipped .stamper,
-.gacha.is-skipped .burst,
-.gacha.is-skipped .beam,
-.gacha.is-skipped .ufo,
-.gacha.is-skipped .confetti,
-.gacha.is-skipped [data-action="skip-gacha"] { display: none; }
 
 /* ---------- ダイアログ ---------- */
 
@@ -1687,6 +1672,5 @@ body.is-map #app { max-width: none; box-shadow: none; background: #cfe9f5; }
   .gacha .burst,
   .gacha .beam,
   .gacha .ufo,
-  .gacha .confetti,
-  .gacha [data-action="skip-gacha"] { display: none; }
+  .gacha .confetti { display: none; }
 }

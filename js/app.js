@@ -434,7 +434,6 @@ function gachaHtml(result) {
 
       <div class="gacha-result">${awards}</div>
       <div class="gacha-actions">
-        <button type="button" class="ghost" data-action="skip-gacha">スキップ</button>
         <button type="button" class="primary" data-action="close-gacha">閉じる</button>
       </div>
     </div>
@@ -710,11 +709,6 @@ function onClick(event) {
     save();
     view = { name: "gacha", result };
     render();
-    return;
-  }
-  if (action === "skip-gacha") {
-    const stage = root.querySelector(".gacha");
-    if (stage) stage.classList.add("is-skipped");
     return;
   }
   if (action === "close-gacha") {
