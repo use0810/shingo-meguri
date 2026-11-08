@@ -221,7 +221,7 @@ function demoHtml() {
   return `
     <section class="demo">
       <h2>デモ用</h2>
-      <p>客先で流れを見せるための操作です。本番の画面には出しません。</p>
+      <p>動作確認用の操作です。本番の画面には出しません。</p>
       <p>${esc(dateLine)}</p>
       ${armed ? '<p class="armed">次の読み取りでは、郷のきみを出します。</p>' : ""}
       <button type="button" data-action="arm-sato" ${satoOwned || armed ? "disabled" : ""}>${esc(forceLabel)}</button>
